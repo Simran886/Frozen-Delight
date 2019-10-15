@@ -1,0 +1,50 @@
+.info{
+    background: #EDDDD4;
+
+}
+body{
+    font-family: 'Caveat', cursive;
+}
+.primary-color{
+    color: #d3325f
+}
+
+.info h2{
+    word-spacing: 0.6rem;
+    color: black;
+}
+.info a{
+    transition: color 1s ease-in-out;
+}
+.info a:hover{
+    color: #242424;
+}
+@media screen and(max-width: 768px){
+.header{
+    background: url(/home/simrankureel/Desktop/Frozen/berries-color-cream-533248.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+}
+
+/*banner*/
+
+.banner{
+    text-align: center;
+    z-index: 3;
+}
+
+.banner_title{
+    font-size: 4rem;
+    
+    text-transform: capitalize;
+    color: var(--brightGreen)
+
+}
+@media screen and (min-width:768px){
+    .banner_title{
+        font-size: 9rem;
+    }
+}

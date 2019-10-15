@@ -1,0 +1,465 @@
+.info{
+    background: #EDDDD4;
+
+}
+body{
+    font-family: 'Caveat', cursive;
+    color: #EDDDD4;
+    background: url(../img/WhatsApp\ Image\ 2019-10-08\ at\ 6.05.39\ PM.jpeg)center/cover fixed no-repeat;
+}
+.heading{
+    color: rgb(141, 238, 103);
+    font-weight: bold;
+    font-size: 75px;
+    letter-spacing: 0.4rem;
+}
+.primary-color{
+    color: #d3325f;
+}
+.Disp{
+    color: #d3325f;
+    font-size: 70px;
+}
+
+.info h2{
+    word-spacing: 0.6rem;
+    color: black;
+}
+.info a{
+    transition: color 1s ease-in-out;
+}
+.info a:hover{
+    color: #242424;
+}
+
+/**********header************/
+@media screen and (max-width:760px){
+#header{
+    min-height: calc(100vh - 94px);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../img/berries-color-cream-533248.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+}
+
+.height-90{
+    min-height:  calc(100vh - 94px);
+}
+
+.banner h1{
+    border-top: 6px dotted #EDDDD4;
+    border-bottom: 6px dotted #EDDDD4;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+@keyframes fromLeft{
+      0%{
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      50% {
+          transform: translateX(30px);
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+
+}
+.main-btn{
+    color: #d3325f;
+    font-size: 2rem;
+    border: 2px solid #d3325f;
+    transition: all 1s ease-in-out;
+}
+.main-btn:hover{
+    color: #dacece;
+    border: 2px solid;
+}
+.frozen-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #697fc4;
+    border-radius: 10px; 
+    transition: all 1s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.header-link{
+    color: #242424;
+}
+
+.ripple {
+    background-position: center;
+    transition: all 0.8s;
+  }
+  .ripple:hover {
+    background: #fd7895 radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #ffffff;
+    background-size: 100%;
+    transition: all 0s;
+  }
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+        
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+        
+    }
+}
+
+ /*#######navbar#########*/
+
+.navbar{
+    background:#EDDDD4;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+.navbar-background{
+    padding:5px 20px;
+}
+
+
+.nav-link{
+    color: #242424;
+    text-decoration:none;
+    transition: all 2s ease;
+    font-size:23px;
+    
+}
+
+
+ .nav-btn{
+    background: rgb(156, 86, 221);
+    color:#d3325f;
+    border: 2px solid #d3325f;
+    font-size: 23px;
+    margin-left: 198px;
+    transition: all 2s ease;
+    
+ }
+
+.nav-btn:hover{
+    color: #242424;
+    border: 2px solid #242424;
+    transform: translateY(-5px);
+}
+.nav-item{
+    align-self: center;
+    
+}
+
+
+
+
+
+
+
+
+
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+ 
+
+
+
+
+.video_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.video_items{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img{
+    width: 350px;
+    height: 250px;
+}
+.resources-item{
+    position: relative;
+    /*for the link*/
+    overflow:hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+}
+
+.resources-item:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:yellow;
+    /*color: rgb(238, 224, 104);*/
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 2rem;
+    border-top: 3px solid  rosybrown;
+    border-bottom:3px solid rosybrown;
+    transition: all 2s ease;
+    opacity:0;
+}
+
+.resources-item:hover .item-link {
+      opacity: 1;
+}
+
+.item-link:hover{
+    color: #c9c1ac;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+    color: #242424;
+}
+.resources-item:hover{
+   outline: 10px solid #d1597b;
+   outline-offset: 0.8rem;
+}
+/*###########menu############*/
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../img/berries-color-cream-533248.jpg)center/cover fixed no-repeat;
+}
+
+.special{
+    border: 3px solid #d3325f;
+    position: relative; 
+}
+
+.special-text{
+    margin-bottom: -10px;
+    right:10%;
+    background: #d3325f;
+    padding: 0 0.4rem;
+}
+
+/*####about##########*/
+
+.about-pictures{
+    position:relative;
+}
+
+.about-image{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+    margin-bottom: 70px;
+
+}
+
+.img-1{
+    left: 0%;
+    top: 20%;
+}
+
+.img-3{
+    left: 20%;
+    top: 45%;
+    z-index: 10;
+}
+.img-4{
+    left: 40%;
+    top: 75%;
+    z-index: 20;
+}
+.img-2{
+    left: 40%;
+    top: 20%;
+    
+}
+.img-5{
+    left: 0%;
+    top: 75%;
+   
+}
+.about-image:hover {
+    outline: 5px solid #e08aa2;
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+.para{
+
+    color: rgb(239, 241, 92);
+}
+.learn{
+    font-size: 30px;
+    color: rgb(153, 236, 84);
+}
+/*#####################review#########################*/
+.review{
+    margin-top: 5%;
+}
+
+.review-item{
+    background: rgba(255,255,255,0.7);
+    clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+}
+
+.review-img{
+    width: 180px;
+    height: 150px;
+}
+/*###########team##############*/
+
+
+.team-icons a{
+    transition: all 1s ease-in-out;
+}
+
+.team-icons a:hover{
+    color: #242424;
+    transform: translateY(-5px);
+}
+
+/*#############contact##################*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    height: 700px;
+    width:600px;
+    position:absolute;
+}
+
+.contact-btn{
+   border-color:#f1bbca;
+    color:#f1bbca;
+    transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+background: #c9c1ac;
+color:#d3325f;
+border-color: #c9c1ac;
+
+}
+
+#contact .card{
+    background: rgba(0,0,0,0.3);
+    transition: all 2s ease;
+
+}
+
+#contact .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+#contact .card-header{
+    color: #f1bbca;
+}
+
+#contact .input-group-text{
+    background: #f1bbca;
+    border-color: #d3325f;
+    color: #242424;
+    
+    
+}
+
+#contact .card input{
+    color: #606060;
+    font-family:  'Times New Roman';
+}
+ 
+/*#########footer#########*/
+
+#back-to-top{
+    background: #c9c1ac;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+.cright{
+    color: #d3325f;
+    
+}
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
